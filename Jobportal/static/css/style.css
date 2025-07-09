@@ -1,0 +1,65 @@
+.home-page {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", cursive, sans-serif;
+}
+
+.container {
+    display: flex;  
+    min-height: 70vh;
+    min-width: 70vw;
+    justify-content: space-evenly;
+    background-color: yellow;
+    border: 10px solid red;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    /* margin-left: 190px; */
+    animation: containerBorderPulse 2s infinite;
+}
+
+.home-button {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: gold;
+    border: 2px solid red;
+    text-align: center;
+    line-height: 75px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+
+}
+
+.home-button:hover {
+    transform: scale(1.05);
+    background-color: orange;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes containerBorderPulse {
+    0% {
+        border-color: red;
+        box-shadow: 0 0 5px red;
+    }
+
+    50% {
+        border-color: darkorange;
+        box-shadow: 0 0 15px darkorange;
+    }
+
+    100% {
+        border-color: red;
+        box-shadow: 0 0 5px red;
+    }
+}
+
+
